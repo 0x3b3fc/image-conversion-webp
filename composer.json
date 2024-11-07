@@ -1,6 +1,6 @@
 {
     "name": "phpsamurai/image-conversion",
-    "description": "A simple Laravel ^10 package for converting media images to WebP format",
+    "description": "A simple laravel package for converting media images to WebP format",
     "type": "library",
     "license": "MIT",
     "authors": [

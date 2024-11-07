@@ -1,0 +1,32 @@
+{
+    "name": "phpsamurai/image-conversion",
+    "description": "A simple Laravel ^10 package for converting media images to WebP format",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sief Hesham",
+            "email": "dev.sief.hesham@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0",
+        "spatie/image": "*",
+        "spatie/laravel-medialibrary": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpsamurai\\ImageConversion\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "phpsamurai\\ImageConversion\\ImageConversionServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

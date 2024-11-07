@@ -22,7 +22,7 @@
 To install the package, run the following command in your Laravel project's root directory:
 
 ```bash
-composer require phpsamurai/image-conversion:dev-main -W
+composer require phpsamurai/image-conversion:dev-master -W
 ```
 
 - step 2: Publish the Configuration File,

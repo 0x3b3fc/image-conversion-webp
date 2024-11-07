@@ -27,17 +27,17 @@ class ConvertImageToWebPJob implements ShouldQueue
         $originalPath = $this->media->getPath();
         $webpPath = preg_replace('/\.(jpg|jpeg|png)$/i', '.webp', $originalPath);
 
+        // If the WebP image doesn't exist, create it
         if (!Storage::exists($webpPath)) {
             Image::load($originalPath)
                 ->format('webp')
                 ->save($webpPath);
 
+            // Update the media record to reflect the WebP file
             $this->media->update([
                 'file_name' => preg_replace('/\.(jpg|jpeg|png)$/i', '.webp', $this->media->file_name),
                 'mime_type' => 'image/webp',
             ]);
-
-            Storage::move($webpPath, $originalPath);
         }
     }
 }

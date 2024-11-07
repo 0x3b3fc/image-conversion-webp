@@ -25,6 +25,22 @@ To install the package, run the following command in your Laravel project's root
 composer require phpsamurai/image-conversion:dev-main -W
 ```
 
+- step 2: Publish the Configuration File,
+Run the following command to publish the package configuration file:
+
+```bash
+php artisan vendor:publish --provider="phpsamurai\ImageConversion\ImageConversionServiceProvider"
+```
+
+- Step 3: update the .env file with the following configuration:
+
+```bash
+IMAGE_FOLDER=youre-image-folder-name
+WEBP_QUALITY=85
+IMAGE_CONVERSION_USE_QUEUE=true
+```
+
+
 This will add the package to your project's dependencies and make it available in your application.
 
 ## 3. Configuration

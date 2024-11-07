@@ -9,6 +9,18 @@
             "email": "dev.sief.hesham@gmail.com"
         }
     ],
+    "keywords": [
+        "php",
+        "laravel",
+        "webp",
+        "filament",
+        "splade",
+        "phpsamurai",
+        "images",
+        "png",
+        "jpg",
+        "jpeg"
+    ],
     "require": {
         "php": "^8.0",
         "illuminate/support": "^10.0",
@@ -26,7 +38,5 @@
                 "phpsamurai\\ImageConversion\\ImageConversionServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    }
 }
